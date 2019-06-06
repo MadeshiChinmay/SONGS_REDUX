@@ -56,3 +56,21 @@ export default connect(mapStateToProps,{
 
 //connection has to be established in all those components in which provider
 // has to provide data.
+
+
+
+/*
+Redux does not automatically detect action creaters being called.
+
+Reduc does not automatically detect a function returning an object 
+that is an 'action'.
+
+connect function when sees a function passed into it in {} 
+it automatically uses the returned object(action) and automatically
+call the dispatch function for us.
+
+
+Whenever you want to call a action creator always pass it into 
+connect function
+
+ */
